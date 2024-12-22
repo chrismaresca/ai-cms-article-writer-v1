@@ -1,0 +1,46 @@
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Serverless directories
+.serverless/
+
+# Python
+.venv/
+venv/
+__pycache__/
+
+# Node.js
+node_modules/
+package-lock.json
+
+# IDE and editor files
+*.swp
+*.sublime-project
+*.sublime-workspace
+*.idea/
+*.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+# End of Selection
+
+
+# Environment variables
+.env
+!.env.*.sample
