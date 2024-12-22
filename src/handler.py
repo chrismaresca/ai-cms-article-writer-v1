@@ -76,7 +76,7 @@ async def write_long_form_article_async(event: Dict[str, Any], context: Dict[str
         }
 
         # Step Six: Configure and run the agent
-        content = await call_content_generation_agent(developer_prompt_kwargs=content_generation_kwargs)
+        content = await call_content_generation_agent(category_slug=handler_api_request.category_slug, developer_prompt_kwargs=content_generation_kwargs)
 
         # Step Seven: Call the title and excerpt generation agent
         title_and_excerpt = await call_title_and_excerpt_generation_agent(content=content)

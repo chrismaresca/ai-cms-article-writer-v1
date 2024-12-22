@@ -44,12 +44,12 @@ client = AsyncOpenAI()
 # o1 Call
 # -------------------------------------------------------------------------------- #
 
-async def call_content_generation_agent(developer_prompt_kwargs: Dict[str, Any]) -> str:
+async def call_content_generation_agent(category_slug: str, developer_prompt_kwargs: Dict[str, Any]) -> str:
     """
     Call the LLM to generate a v1 draft of given source content.
     """
 
-    template_name = "ai-recent-news-content.jinja"
+    template_name = f"{category_slug}-template.jinja"
 
     # Get the start time
     start_time = time.monotonic()

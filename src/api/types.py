@@ -7,8 +7,7 @@
 # -------------------------------------------------------------------------------- #
 
 # Type imports
-from typing import List, Optional, Dict, Any
-import json
+from typing import Optional, Dict, Any
 
 # Pydantic imports
 from pydantic import BaseModel, Field
